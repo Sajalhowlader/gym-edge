@@ -3,48 +3,48 @@
         "id": 0,
         "name": "Fitness",
         "picture": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "price": 34,
-        "description": "brown",
+        "price": 3540,
+        "description": "Experts define physical fitness as “one's ability to execute daily activities with optimal performance, endurance, and strength with the management of disease, fatigue, and stress and reduced sedentary behavior.",
         "ratings": "female"
     },
     {
         "id": 1,
         "name": "Karate",
         "picture": "https://images.unsplash.com/photo-1550759808-37c78fb8f1e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGt1bmclMjBmdXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "price": 29,
-        "description": "green",
+        "price": 2090,
+        "description": "karate, (Japanese: “empty hand”) unarmed martial-arts discipline employing kicking, striking, and defensive blocking with arms and legs. Emphasis is on concentrating as much of the body's power as possible at the point and instant of impact.",
         "ratings": "female"
     },
     {
         "id": 2,
         "name": "Meditation",
         "picture": "https://images.unsplash.com/photo-1577253313708-cab167d2c474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80",
-        "price": 30,
-        "description": "brown",
+        "price": 3050,
+        "description": "Meditation is a practice in which an individual uses a technique such as mindfulness, or focusing the mind on a particular object, thought, or activity  to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.",
         "ratings": "female"
     },
     {
         "id": 3,
         "name": "Cycling",
         "picture": "https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "price": 29,
-        "description": "brown",
+        "price": 2900,
+        "description": "Cycling, use of a bicycle for sport, recreation, or transportation. The sport of cycling consists of professional and amateur races, which are held mostly in continental Europe, the United States, and Asia. The recreational use of the bicycle is widespread in Europe and the United States",
         "ratings": "female"
     },
     {
         "id": 4,
         "name": "Running",
         "picture": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
-        "price": 32,
-        "description": "brown",
+        "price": 3250,
+        "description": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot. Running is a type of gait characterized by an aerial phase in which all feet are above the ground (though there are exceptions).",
         "ratings": "female"
     },
     {
         "id": 5,
         "name": "Yoga",
         "picture": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "price": 32,
-        "description": "brown",
+        "price": 3520,
+        "description": "Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation. Yoga is an ancient practice that may have originated in India. It involves movement, meditation, and breathing techniques to promote mental and physical well-being.",
         "ratings": "female"
     }
 ]
