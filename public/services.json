@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "name": "Fitness",
+        "picture": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": 34,
+        "description": "brown",
+        "ratings": "female"
+    },
+    {
+        "id": 1,
+        "name": "Karate",
+        "picture": "https://images.unsplash.com/photo-1550759808-37c78fb8f1e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGt1bmclMjBmdXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "price": 29,
+        "description": "green",
+        "ratings": "female"
+    },
+    {
+        "id": 2,
+        "name": "Meditation",
+        "picture": "https://images.unsplash.com/photo-1577253313708-cab167d2c474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80",
+        "price": 30,
+        "description": "brown",
+        "ratings": "female"
+    },
+    {
+        "id": 3,
+        "name": "Cycling",
+        "picture": "https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": 29,
+        "description": "brown",
+        "ratings": "female"
+    },
+    {
+        "id": 4,
+        "name": "Running",
+        "picture": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+        "price": 32,
+        "description": "brown",
+        "ratings": "female"
+    },
+    {
+        "id": 5,
+        "name": "Yoga",
+        "picture": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "price": 32,
+        "description": "brown",
+        "ratings": "female"
+    }
+]

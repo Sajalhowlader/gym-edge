@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../images/header-logo.png'
-const Header = () => {
+const Header = ({ color }) => {
     return (
-        <nav className="navbar navbar-expand-lg ">
+        <nav style={{ background: color }} className="navbar navbar-expand-lg ">
             <div className="container nav-items-container">
                 <div>
                     <img className='img-fluid' src={logo} alt="" />

@@ -3,6 +3,7 @@ import Header from '../../Sheared/Header/Header';
 import instructorLogo from '../../../images/trainer.png'
 import './Home.css'
 import Choose from '../Choose/Choose';
+import Footer from '../../Sheared/Footer/Footer';
 const Home = () => {
     return (
         <div className='home-container'>
@@ -19,6 +20,7 @@ const Home = () => {
                 </div>
             </div>
             <Choose />
+            <Footer />
         </div>
 
     );
