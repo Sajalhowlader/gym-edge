@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../Sheared/Header/Header';
 import instructorLogo from '../../../images/trainer.png'
 import './Home.css'
+import Choose from '../Choose/Choose';
 const Home = () => {
     return (
         <div className='home-container'>
@@ -17,7 +18,9 @@ const Home = () => {
                     <button>About me</button>
                 </div>
             </div>
+            <Choose />
         </div>
+
     );
 };
 
