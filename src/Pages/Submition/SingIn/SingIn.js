@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../../Sheared/Header/Header';
 import bgImg from '../../../images/loginImg/bg.svg'
 import avatar from '../../../images/loginImg/avatar.svg'
 import './SingIn.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-// import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import googleLogo from '../../../images/loginImg/google3.png'
 import auth from '../../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const SingIn = () => {
 
     const navigate = useNavigate()
-
+    const location = useLocation()
     const [signInWithGoogle,
         googleUser,
-        GoogleLoading,
         googleError] = useSignInWithGoogle(auth);
 
     const [
@@ -25,10 +25,18 @@ const SingIn = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
 
+
     const [userInfo, setUserInfo] = useState({
         email: "",
         password: ""
     })
+
+
+    useEffect(() => {
+        if (error || googleError) {
+            toast(error?.message,)
+        }
+    }, [error, googleError])
 
     const handleEmail = e => {
         setUserInfo({ ...userInfo, email: e.target.value })
@@ -43,12 +51,11 @@ const SingIn = () => {
     const handleGoogleSingIn = () => {
         signInWithGoogle()
     }
-    if (error) {
-        alert('kecu akta')
+    let from = location.state?.from?.pathname || "/";
+    if (user || googleUser) {
+        navigate(from, { replace: true })
     }
-    if (user) {
-        navigate("/home")
-    }
+
     return (
         <div >
             <Header color="black" />
@@ -59,13 +66,14 @@ const SingIn = () => {
                         <img src={bgImg} alt="" />
                     </div>
                     <div className="login-info">
-                        <form onClick={handleSubmit}>
-                            <div className='info'>
+                        <div className='info'>
+                            <form onClick={handleSubmit}>
                                 <img src={avatar} alt="" />
                                 <h2 className=''>Welcome</h2>
-                                <input className='sing-in-input' type="email" name="" id="" placeholder='Your Email' onBlur={handleEmail} required />
+                                <input className='sing-in-input' type="email" name="" id="" placeholder='Your Email' onChange={handleEmail} required />
 
                                 <input className='sing-in-input' type="password" name="" id="" placeholder='Your password' onBlur={handlePassword} required />
+
                                 <p className='sing-up-link'>New Here?
                                     <Link to='/register'>
                                         <strong className='first-res'> Register First</strong>
@@ -78,11 +86,13 @@ const SingIn = () => {
                                     <p>or</p>
                                     <div />
                                 </div>
-                                <button onClick={handleGoogleSingIn} className='sing-up-btn google-btn'><img src={googleLogo} alt="" /> Continue With</button>
-                            </div>
-                        </form>
+
+                            </form>
+                        </div>
+                        <button onClick={handleGoogleSingIn} className='sing-up-btn google-btn'><img src={googleLogo} alt="" /> Continue With</button>
                     </div>
                 </div>
+                <ToastContainer />
 
 
             </div>
