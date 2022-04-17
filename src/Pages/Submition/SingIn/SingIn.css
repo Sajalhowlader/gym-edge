@@ -49,3 +49,7 @@ input.sing-in-input {
     cursor: pointer;
     color: #ff3e7c;
 }
+
+.sing-up-link a {
+    text-decoration: none;
+}
