@@ -1,5 +1,51 @@
-.login-container {
-    background-image: url(../../../images/loginImg/wave.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.login-logo img {
+    width: 700px;
+    margin-left: 100px;
+}
+
+.login-info {
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.login-info img {
+    width: 100px;
+}
+
+.login-info-container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+input.sing-in-input {
+    border-top: 0;
+    border-bottom: 3px solid #37c1ba;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.sing-up-btn {
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    background: #38d39f;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+}
+
+.first-res {
+    cursor: pointer;
+    color: #ff3e7c;
 }
