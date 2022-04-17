@@ -4,11 +4,18 @@ import bgImg from '../../../images/loginImg/bg.svg'
 import avatar from '../../../images/loginImg/avatar.svg'
 import './SingIn.css'
 import { Link, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+// import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import googleLogo from '../../../images/loginImg/google3.png'
 import auth from '../../../firebase.init';
 const SingIn = () => {
 
     const navigate = useNavigate()
+
+    const [signInWithGoogle,
+        googleUser,
+        GoogleLoading,
+        googleError] = useSignInWithGoogle(auth);
 
     const [
         signInWithEmailAndPassword,
@@ -33,6 +40,9 @@ const SingIn = () => {
         e.preventDefault()
         signInWithEmailAndPassword(userInfo.email, userInfo.password)
     }
+    const handleGoogleSingIn = () => {
+        signInWithGoogle()
+    }
     if (error) {
         alert('kecu akta')
     }
@@ -43,12 +53,13 @@ const SingIn = () => {
         <div >
             <Header color="black" />
             <div className='login-container'>
-                <form onSubmit={handleSubmit}>
-                    <div className='login-info-container'>
-                        <div className='login-logo'>
-                            <img src={bgImg} alt="" />
-                        </div>
-                        <div className="login-info">
+
+                <div className='login-info-container'>
+                    <div className='login-logo'>
+                        <img src={bgImg} alt="" />
+                    </div>
+                    <div className="login-info">
+                        <form onClick={handleSubmit}>
                             <div className='info'>
                                 <img src={avatar} alt="" />
                                 <h2 className=''>Welcome</h2>
@@ -62,11 +73,17 @@ const SingIn = () => {
                                 </p>
 
                                 <input className='sing-up-btn' type="submit" value="SING IN" />
-
+                                <div className='or-container'>
+                                    <div />
+                                    <p>or</p>
+                                    <div />
+                                </div>
+                                <button onClick={handleGoogleSingIn} className='sing-up-btn google-btn'><img src={googleLogo} alt="" /> Continue With</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+
 
             </div>
         </div>

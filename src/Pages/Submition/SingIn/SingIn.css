@@ -53,3 +53,28 @@ input.sing-in-input {
 .sing-up-link a {
     text-decoration: none;
 }
+
+.or-container div {
+    height: 2px;
+    background: #efeeee;
+    width: 50%;
+    margin-top: 13px;
+}
+
+.or-container {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.google-btn img {
+    width: 30px;
+}
+
+.google-btn {
+    background-color: #10112ef5;
+}
+
+.or-container p {
+    margin: 0px 12px;
+}
