@@ -1,7 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../../images/header-logo.png'
 const Header = ({ color }) => {
+
+    const navigate = useNavigate()
+
+    const handleSingUpBtn = () => {
+        navigate("/login")
+    }
+
+
+
+
     return (
         <nav style={{ background: color }} className="navbar navbar-expand-lg ">
             <div className="container nav-items-container">
@@ -19,9 +29,9 @@ const Header = ({ color }) => {
                         <NavLink className="nav-link active menu-link" aria-current="page" to="/about">ABOUT</NavLink>
                         <NavLink className="nav-link active menu-link" aria-current="page" to="/contacts">CONTACTS</NavLink>
                     </ul>
-                    <form className="d-flex log-in">
-                        <button className="btn btn-outline-success" type="submit">LOG IN</button>
-                    </form>
+
+                    <button onClick={handleSingUpBtn} className="btn btn-outline-success" type="submit">LOG IN</button>
+
                 </div>
             </div>
         </nav>
