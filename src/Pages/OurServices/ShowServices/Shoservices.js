@@ -4,15 +4,15 @@ const Shoservices = ({ service }) => {
     console.log(service)
     const { name, picture, price, description } = service
     return (
-        <div class="col col-md-4">
-            <div class="card h-100">
-                <img className='img-fluid services-picture' src={picture} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{name}</h5>
+        <div className="col-12 col-md-4">
+            <div className="card h-100 services-info-container">
+                <img src={picture} className="img-fluid " alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
                     <h2>{price} TK</h2>
-                    <p class="card-text">{description}</p>
+                    <p className="card-text">{description}</p>
                 </div>
-                <div class="">
+                <div className="">
                     <button className='checkout-btn'>CHECKOUT</button>
                 </div>
             </div>

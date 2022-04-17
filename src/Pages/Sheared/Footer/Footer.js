@@ -5,7 +5,7 @@ const Footer = () => {
     const year = new Date().getFullYear()
     return (
 
-        <div>
+        <div className='py-5'>
             <p className='text-center'>Copyright @{year} by &copy; Antu Howlader Sajal</p>
         </div>
     );

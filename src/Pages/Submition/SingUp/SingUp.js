@@ -4,11 +4,14 @@ import bgImg from '../../../images/loginImg/bg.svg'
 import avatar from '../../../images/loginImg/avatar.svg'
 import { Link } from 'react-router-dom';
 const SingUp = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
     return (
         <div >
             <Header color="black" />
             <div className='login-container'>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className='login-info-container'>
                         <div className='login-logo'>
                             <img src={bgImg} alt="" />

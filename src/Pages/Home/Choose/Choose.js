@@ -40,7 +40,7 @@ const Choose = () => {
                 </div>
             </div>
             <div className='choose-logo'>
-                <img src={chooseLogo} alt="" />
+                <img className='img-fluid' src={chooseLogo} alt="" />
             </div>
         </div>
     );

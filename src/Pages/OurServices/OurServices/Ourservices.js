@@ -11,8 +11,8 @@ const Ourservices = () => {
     console.log(services);
     return (
         <div className='services-container'>
-            <h2 className='text-center'>MY SERVICES</h2>
-            <div className='row g-5 services-info-container'>
+            <h2 className='text-center mb-5'>MY SERVICES</h2>
+            <div className='row gy-4 container mx-auto'>
                 {
                     services.map(service => <Shoservices key={service.id} service={service} />)
                 }
