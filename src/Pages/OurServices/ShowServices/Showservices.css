@@ -1,0 +1,28 @@
+.services-container {
+    background: #f7f7f7;
+    padding: 40px 0px;
+}
+
+.services-info-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+.services-info-container img {
+    height: 300px;
+    object-fit: cover;
+}
+
+button.checkout-btn {
+    width: 100%;
+    border: none;
+    background: rgb(9, 60, 64);
+    padding: 10px 0px;
+    border: 1px solid gray;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    font-family: revert;
+}

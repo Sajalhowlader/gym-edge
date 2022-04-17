@@ -1,11 +1,21 @@
 import React from 'react';
-
+import './Showservices.css'
 const Shoservices = ({ service }) => {
     console.log(service)
-    const { name } = service
+    const { name, picture, price, description } = service
     return (
-        <div>
-            <h1>name:{name}</h1>
+        <div class="col col-md-4">
+            <div class="card h-100">
+                <img className='img-fluid services-picture' src={picture} class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">{name}</h5>
+                    <h2>{price} TK</h2>
+                    <p class="card-text">{description}</p>
+                </div>
+                <div class="">
+                    <button className='checkout-btn'>CHECKOUT</button>
+                </div>
+            </div>
         </div>
     );
 };

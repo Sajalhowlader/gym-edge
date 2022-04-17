@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../Sheared/Header/Header';
 import Shoservices from '../ShowServices/Shoservices';
-
 const Ourservices = () => {
     const [services, setServices] = useState([])
 
@@ -12,9 +10,9 @@ const Ourservices = () => {
     }, [])
     console.log(services);
     return (
-        <div>
-            <Header color="black" />
-            <div className='row'>
+        <div className='services-container'>
+            <h2 className='text-center'>MY SERVICES</h2>
+            <div className='row g-5 services-info-container'>
                 {
                     services.map(service => <Shoservices key={service.id} service={service} />)
                 }

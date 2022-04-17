@@ -4,6 +4,7 @@ import instructorLogo from '../../../images/trainer.png'
 import './Home.css'
 import Choose from '../Choose/Choose';
 import Footer from '../../Sheared/Footer/Footer';
+import Ourservices from '../../OurServices/OurServices/Ourservices'
 const Home = () => {
     return (
         <div className='home-container'>
@@ -20,6 +21,7 @@ const Home = () => {
                 </div>
             </div>
             <Choose />
+            <Ourservices />
             <Footer />
         </div>
 

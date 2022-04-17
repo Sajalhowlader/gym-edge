@@ -3,7 +3,7 @@ import './App.css';
 import About from './Pages/About/About/About';
 import Contacts from './Pages/Contacts/Contacts';
 import Home from './Pages/Home/Home/Home';
-import Ourservices from './Pages/OurServices/OurServices/Ourservices';
+// import Ourservices from './Pages/OurServices/OurServices/Ourservices';
 // import Header from './Pages/Sheared/Header/Header';
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='home' element={<Home />} />
-        <Route path='services' element={<Ourservices />} />
         <Route path='about' element={<About />} />
         <Route path='contacts' element={<Contacts />} />
 
