@@ -14,7 +14,7 @@ const SingUp = () => {
     const [
         createUserWithEmailAndPassword,
         user
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleEmail = e => {
         setUserInfo({ ...userInfo, email: e.target.value })

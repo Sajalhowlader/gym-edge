@@ -4,7 +4,7 @@ import bgImg from '../../../images/loginImg/bg.svg'
 import avatar from '../../../images/loginImg/avatar.svg'
 import './SingIn.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import googleLogo from '../../../images/loginImg/google3.png'
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
@@ -24,7 +24,7 @@ const SingIn = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
     const [userInfo, setUserInfo] = useState({
         email: "",
@@ -48,6 +48,9 @@ const SingIn = () => {
         e.preventDefault()
         signInWithEmailAndPassword(userInfo.email, userInfo.password)
     }
+    if (loading) {
+
+    }
     const handleGoogleSingIn = () => {
         signInWithGoogle()
     }
@@ -55,7 +58,16 @@ const SingIn = () => {
     if (user || googleUser) {
         navigate(from, { replace: true })
     }
+    const resetPassword = async () => {
+        const email = userInfo.email
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        } else {
+            toast('enter your email address')
+        }
 
+    }
     return (
         <div >
             <Header color="black" />
@@ -79,7 +91,8 @@ const SingIn = () => {
                                         <strong className='first-res'> Register First</strong>
                                     </Link>
                                 </p>
-
+                                <p >
+                                    Forget Password? <strong onClick={resetPassword} className='forget-link'>Reset Password?</strong></p>
                                 <input className='sing-up-btn' type="submit" value="SING IN" />
                                 <div className='or-container'>
                                     <div />
