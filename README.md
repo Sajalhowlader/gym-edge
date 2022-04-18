@@ -10,19 +10,19 @@ This project was bootstrapped with [GYM EDGE](https://github.com/facebook/create
 ** Then make a footer section in the home page.
 
 #### In Checkout Page
-** Checkout page is a private/protect page.
-** If user is not logged in, he will be taken to the login page.
+* Checkout page is a private/protect page.
+* If user is not logged in, he will be taken to the login page.
 
 #### In About Page
-** In my about page i show about my goal.
+* In my about page i show about my goal.
 
 #### In Blogs Page
-** In the blogs page i show some question answer.
+* In the blogs page i show some question answer.
 
 #### In logIn Page
-** Make a log in from where user can log in with email and password
-** If the user comes here fast time and if he click register now, it wii take him to the register page.
-** Add a continue with google button where user can sing in with google. 
+* Make a log in from where user can log in with email and password
+* If the user comes here fast time and if he click register now, it wii take him to the register page.
+* Add a continue with google button where user can sing in with google. 
 
 
 
