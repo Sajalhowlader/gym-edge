@@ -4,7 +4,7 @@ This project was bootstrapped with [GYM EDGE](https://github.com/facebook/create
 
 ## Everything i have done this project
 #### In Home Page
-** Make a home page where i have shown a baner and show what is my work.
+* Make a home page where i have shown a baner and show what is my work.
 ** Then make two page one is why chose me and my services 
 ** In services page i show which services I provide.
 ** Then make a footer section in the home page.
