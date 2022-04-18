@@ -34,6 +34,6 @@ This project was bootstrapped with [GYM EDGE](https://github.com/facebook/create
 ### `Gym Edge Website link`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://gym-edge-react.web.app/](https://gym-edge-react.web.app/) to view it in your browser.
 
 
