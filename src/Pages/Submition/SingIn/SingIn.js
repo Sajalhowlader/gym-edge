@@ -14,8 +14,7 @@ const SingIn = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const [signInWithGoogle,
-        googleUser,
-        googleError] = useSignInWithGoogle(auth);
+        googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
     const [
         signInWithEmailAndPassword,
@@ -34,7 +33,8 @@ const SingIn = () => {
 
     useEffect(() => {
         if (error || googleError) {
-            toast(error?.message, googleError?.message)
+            toast(error?.message)
+            toast(googleError?.message)
         }
     }, [error, googleError])
 
@@ -48,9 +48,7 @@ const SingIn = () => {
         e.preventDefault()
         signInWithEmailAndPassword(userInfo.email, userInfo.password)
     }
-    if (loading) {
 
-    }
     const handleGoogleSingIn = () => {
         signInWithGoogle()
     }

@@ -5,7 +5,12 @@ import './Home.css'
 import Choose from '../Choose/Choose';
 import Footer from '../../Sheared/Footer/Footer';
 import Ourservices from '../../OurServices/OurServices/Ourservices'
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+    const navigate = useNavigate()
+    const handlebutton = () => {
+        navigate("/about")
+    }
     return (
         <div className='home-container'>
             <Header />
@@ -17,7 +22,7 @@ const Home = () => {
                     <h2>Hi</h2>
                     <h1>I'm <span>Antu Howlader</span></h1>
                     <p>Body Building and Yoga Instructor </p>
-                    <button>About me</button>
+                    <button onClick={handlebutton}>About me</button>
                 </div>
             </div>
             <Choose />

@@ -24,7 +24,12 @@ This project was bootstrapped with [GYM EDGE](https://github.com/facebook/create
 * If the user comes here fast time and if he click register now, it wii take him to the register page.
 * Add a continue with google button where user can sing in with google. 
 
-
+## Everything i have used in this project
+* React(A JavaScript library)
+* React router(the standard routing library for React.)
+* Bootstrap v-5(css framework)
+* Firebase(Storage system by google)
+* React router hook(Storage system by React)
 
 ### `Gym Edge Website link`
 
