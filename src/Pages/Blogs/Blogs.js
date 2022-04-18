@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Sheared/Footer/Footer';
 import Header from '../Sheared/Header/Header';
 import './Blog.css'
 const Blogs = () => {
@@ -23,6 +24,7 @@ const Blogs = () => {
                 <h2 className='text-center mb-4'>What other services does firebase provide other than authentication</h2>
                 <p>Other than Authentication those belows area we can use firebase. That's Realtime Database, Google analytics, and clodr storage which are powerful tools needed for mobile and web platform. It also allow us to do cloud messaging for cross platform apps, higher website traffic with apps indexing, swift and secured web hosting, higher accessibility to machine learning apis, crash reporting for swift bugs fixing, optimized app performance, and push notification for target messing.</p>
             </div>
+            <Footer />
         </div>
     );
 };

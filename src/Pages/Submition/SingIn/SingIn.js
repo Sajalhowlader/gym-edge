@@ -33,6 +33,10 @@ const SingIn = () => {
 
     useEffect(() => {
         if (error || googleError) {
+            if (error.code === "auth/invalid-email") {
+                toast("please provide a email")
+            }
+        } else {
             toast(error?.message)
             toast(googleError?.message)
         }

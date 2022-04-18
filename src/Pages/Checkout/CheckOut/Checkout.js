@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../../Sheared/Footer/Footer';
 import Header from '../../Sheared/Header/Header';
 import ShowCheckOut from '../ShowCheckOut/ShowCheckOut';
 
@@ -18,6 +19,7 @@ const Checkout = () => {
                     checkouts.map(checkout => <ShowCheckOut key={checkout.id} checkout={checkout} />)
                 }
             </div>
+            <Footer />
         </div>
     );
 };

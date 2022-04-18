@@ -30,10 +30,21 @@ const Header = ({ color }) => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <NavLink className="nav-link active menu-link" aria-current="page" to="/home">HOME</NavLink>
-                        <NavLink className="nav-link active menu-link" aria-current="page" to="/checkout">CHECKOUT</NavLink>
-                        <NavLink className="nav-link active menu-link" aria-current="page" to="/about">ABOUT</NavLink>
-                        <NavLink className="nav-link active menu-link" aria-current="page" to="/blog">BLOG</NavLink>
+                        <NavLink to="/home" className={({ isActive }) =>
+                            isActive ? "active-link" : "nav-link active menu-link"
+                        } aria-current="page" >HOME</NavLink>
+
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "active-link" : "nav-link active menu-link"
+                        } aria-current="page" to="/checkout">CHECKOUT</NavLink>
+
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "active-link" : "nav-link active menu-link"
+                        } aria-current="page" to="/about">ABOUT</NavLink>
+
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "active-link" : "nav-link active menu-link"
+                        } aria-current="page" to="/blog">BLOG</NavLink>
                     </ul>
 
                     {

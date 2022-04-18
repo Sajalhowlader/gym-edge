@@ -72,8 +72,16 @@
 .menu-link {
     font-weight: bold;
     color: white;
-
     margin-right: 35px;
+}
+
+.active-link {
+    font-weight: bold;
+    color: rgb(227 9 120);
+    margin-right: 35px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
 }
 
 @media (max-width:668px) {
