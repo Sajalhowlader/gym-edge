@@ -1,0 +1,23 @@
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #334099;
+}
+
+.about-info h1 span {
+    font-weight: bold;
+    color: #2b0fc9;
+    font-family: cursive;
+}

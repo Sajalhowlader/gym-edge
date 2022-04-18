@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About/About';
+import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/CheckOut/Checkout';
-import Contacts from './Pages/Contacts/Contacts';
+
 import Home from './Pages/Home/Home/Home';
 import Notfound from './Pages/NotFound/Notfound';
 import RequireAuth from './Pages/OurServices/RequireAuth/RequireAuth';
@@ -24,7 +25,7 @@ function App() {
             <Checkout />
           </RequireAuth>
         } />
-        <Route path='contacts' element={<Contacts />} />
+        <Route path='blog' element={<Blogs />} />
         <Route path='login' element={<SingIn />} />
         <Route path='register' element={<SingUp />} />
         <Route path='*' element={<Notfound />} />

@@ -33,7 +33,7 @@ const Header = ({ color }) => {
                         <NavLink className="nav-link active menu-link" aria-current="page" to="/home">HOME</NavLink>
                         <NavLink className="nav-link active menu-link" aria-current="page" to="/checkout">CHECKOUT</NavLink>
                         <NavLink className="nav-link active menu-link" aria-current="page" to="/about">ABOUT</NavLink>
-                        <NavLink className="nav-link active menu-link" aria-current="page" to="/contacts">CONTACTS</NavLink>
+                        <NavLink className="nav-link active menu-link" aria-current="page" to="/blog">BLOG</NavLink>
                     </ul>
 
                     {

@@ -34,7 +34,7 @@ const SingIn = () => {
 
     useEffect(() => {
         if (error || googleError) {
-            toast(error?.message,)
+            toast(error?.message, googleError?.message)
         }
     }, [error, googleError])
 
