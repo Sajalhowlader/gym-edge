@@ -1,6 +1,6 @@
 # Continue with Gym Edge
 
-This project was bootstrapped with [GYM EDGE](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [GYM EDGE](https://gym-edge-react.web.app/).
 
 ## Everything i have done this project
 #### In Home Page
